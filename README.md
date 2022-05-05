@@ -7,7 +7,7 @@ This is our research code for CVPR 2022 paper: [SwinBERT: End-to-End Transformer
 We present SwinBERT, an end-to-end transformer-based model for video captioning. SwinBERT takes video frame patches directly as inputs, and outputs a natural language description. In this repository, we provide our research code for training and testing SwinBERT for video captioning.
 
 ## News
-  - x/xx/2022: Init release
+  - 05/05/2022: Init release
 
 ## Released items
 - [x] Training and evaluation code
@@ -285,7 +285,7 @@ CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert_inference.py \
        --do_test 
 ```
 
-The prediction should look similar to
+The prediction should look like
 
 ```bash
 Prediction: a young boy is showing how to make a paper airplane.
@@ -308,10 +308,10 @@ CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
 
 Notes: Our dataloader supports two different modes:
 - [x] Online decoding: Extract video frames on-the-fly during experiments. It has less data prepro efforts. 
-- [x] Offline decoding: Need to store all the extracted frames in a TSV file. But it usually gives faster experiments. 
+- [x] Offline decoding: Need to store all the extracted frames in a TSV file. But it usually run faster. 
 
-For online decoding, please use `VATEX/private_test.yaml`
-For offline decoding, please use  `VATEX/private_test_128frames.yaml`
+For online decoding, please use `VATEX/public_test.yaml`
+For offline decoding, please use  `VATEX/public_test_128frames.yaml`
 
 
 ### MSRVTT
