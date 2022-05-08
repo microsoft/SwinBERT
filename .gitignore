@@ -39,7 +39,7 @@ tmp*.py
 */*output*/
 linjli
 ./datasets
-models
+./models
 
 
 # compiled files #
