@@ -318,7 +318,7 @@ For offline decoding, please use  `VATEX/public_test_128frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/vatex/best-checkpoint/'
+EVAL_DIR='./models/table1/msrvtt/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml MSRVTT-v2/val_128frames.yaml  \
        --do_eval true \
@@ -347,7 +347,7 @@ For offline decoding, please use  `YouCook2/testing_128frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/vatex/best-checkpoint/'
+EVAL_DIR='./models/table1/msvd/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml MSVD/val_32frames.yaml  \
        --do_eval true \
