@@ -274,8 +274,8 @@ Our inference code will take a video as input, and generate video caption.
 
 ```bash
 # After launching the docker container 
-EVAL_DIR='./models/table1/vatex/best_checkpoint/'
-CHECKPOINT='./models/table1/vatex/best_checkpoint/model.bin'
+EVAL_DIR='./models/table1/vatex/best-checkpoint/'
+CHECKPOINT='./models/table1/vatex/best-checkpoint/model.bin'
 VIDEO='./docs/G0mjFqytJt4_000152_000162.mp4'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert_inference.py \
        --resume_checkpoint $CHECKPOINT  \
@@ -298,7 +298,7 @@ We provide example scripts to evaluate pre-trained checkpoints
 ### VATEX
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/vatex/best_checkpoint/'
+EVAL_DIR='./models/table1/vatex/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml VATEX/public_test_128frames.yaml  \
        --do_eval true \
@@ -318,7 +318,7 @@ For offline decoding, please use  `VATEX/public_test_128frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/vatex/best_checkpoint/'
+EVAL_DIR='./models/table1/vatex/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml MSRVTT-v2/val_128frames.yaml  \
        --do_eval true \
@@ -332,7 +332,7 @@ For offline decoding, please use  `MSRVTT-v2/val_128frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/youcook2/best_checkpoint/'
+EVAL_DIR='./models/table1/youcook2/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml YouCook2/testing_128frames.yaml  \
        --do_eval true \
@@ -347,7 +347,7 @@ For offline decoding, please use  `YouCook2/testing_128frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/vatex/best_checkpoint/'
+EVAL_DIR='./models/table1/vatex/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml MSVD/val_32frames.yaml  \
        --do_eval true \
@@ -361,7 +361,7 @@ For offline decoding, please use  `MSVD/val_32frames.yaml`
 
 ```bash
 # Assume in the docker container 
-EVAL_DIR='./models/table1/tvc/best_checkpoint/'
+EVAL_DIR='./models/table1/tvc/best-checkpoint/'
 CUDA_VISIBLE_DEVICES=0 python src/tasks/run_caption_VidSwinBert.py \
        --val_yaml TVC/val_128frames.yaml  \
        --do_eval true \
