@@ -30,7 +30,7 @@ done
 # Download our 32-frame-based model 
 # --------------------------------
 
-for DATASET in 'vatex' 'msrvtt' 'tvc' 'youcook2' 'msvd'
+for DATASET in 'vatex' 'tvc' 'youcook2' 'msvd'
 do
     wget -nc $BLOB/models/${DATASET}-32frm.zip -O $REPO_DIR/models/32frm/${DATASET}-32frm.zip
     unzip $REPO_DIR/models/32frm/${DATASET}-32frm.zip -d $REPO_DIR/models/32frm/${DATASET}/
